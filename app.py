@@ -5,7 +5,11 @@ from pydantic import BaseModel, Field
 from typing import Literal
 from fastapi.middleware.cors import CORSMiddleware
 
-model = joblib.load(r'C:\Users\visha\MyProject\mental_health_score_prediction\model_pipeline\rf_pipeline_tuned.joblib')
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(BASE_DIR, "model_pipeline", "rf_pipeline_tuned.joblib"))
+#model = joblib.load(r'C:\Users\visha\MyProject\mental_health_score_prediction\model_pipeline\rf_pipeline_tuned.joblib')
 top_countries = ['Other','India','USA','Canada','Australia','UK','Germany','Mexico','Turkey','France']
 
 app = FastAPI()
