@@ -22,7 +22,7 @@ Thumbs.db
 # Logs
 *.log
 
-# Model artifacts (large files)
-*.pkl
-*.h5
-*.joblib
+# Model artifacts (uncomment to ignore large files)
+# *.pkl
+# *.h5
+# *.joblib
