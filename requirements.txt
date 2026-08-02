@@ -1,0 +1,20 @@
+# =========================================================
+# Core dependencies (required to RUN the app)
+# =========================================================
+fastapi==0.140.0
+uvicorn==0.51.0
+pydantic==2.13.4
+joblib==1.5.3
+pandas==3.0.5
+scikit-learn==1.9.0
+
+# =========================================================
+# Training-only dependencies (only needed if re-running
+# the notebook to retrain the model — safe to skip for
+# just running the FastAPI server)
+# =========================================================
+matplotlib==3.11.1
+seaborn==0.13.2
+optuna==4.9.0
+xgboost==3.2.0
+catboost==1.2.10
