@@ -13,8 +13,8 @@ scikit-learn==1.9.0
 # the notebook to retrain the model — safe to skip for
 # just running the FastAPI server)
 # =========================================================
-matplotlib==3.11.1
-seaborn==0.13.2
-optuna==4.9.0
-xgboost==3.2.0
-catboost==1.2.10
+# matplotlib==3.11.1
+# seaborn==0.13.2
+# optuna==4.9.0
+# xgboost==3.2.0
+# catboost==1.2.10
